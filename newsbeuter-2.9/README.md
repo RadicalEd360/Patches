@@ -1,5 +1,5 @@
 ## to install
-install newsbeuter
+install newsbeuter (any version)
 
 mv dot.newsbeuter to ~/.newsbeuter
 
