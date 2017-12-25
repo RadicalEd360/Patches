@@ -6,14 +6,16 @@ mv dot.newsbeuter to ~/.newsbeuter
 append awesomebeuter script to the end of bashrc
 
 ## to use
-you can set your own custom stuff by adding an alias to awesome beuters and creating a theme file in themes folder
+you can set your own custom stuff by adding an alias to awesomebeuters part of bashrc and creating a theme file in themes folder, or use/modify an existing one
 
 alias (programname)='nb-term-search "(url identifier)" "(themefile)"'
 
-#Example:
+Example:
+
 alias newsbeuter-youtube='nb-term-search "YouTube" "youtube.theme"'
 
 http://rss.for.youtube/videos.rss "YouTube"
+
 this url will be picked up by newsbeuter-youtube and displayed with youtube.theme
 
 
