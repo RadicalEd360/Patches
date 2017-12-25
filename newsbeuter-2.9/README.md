@@ -26,5 +26,4 @@ this url will be picked up by newsbeuter-youtube and displayed with youtube.them
 download my urlhandler script to launch urls in your own programs
 
 ## Important
-the cleanup cache config option set to no is mandatory for this to work
-without it set newsbeuter will delete all the cache items when your urls change
+the cleanup cache config option set to no is mandatory for this to work! without it set, newsbeuter will delete all items associated to urls not currently being viewed in the cache.db when you use a different alias!
