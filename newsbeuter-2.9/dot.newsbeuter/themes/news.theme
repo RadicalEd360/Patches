@@ -1,0 +1,13 @@
+browser "newsbeuter-browser.sh %u"
+bookmark-cmd "newsbeuter-bookmarker.sh"
+bookmark-interactive yes
+
+color background white default
+color listnormal white default
+color listfocus black white bold reverse
+color listnormal_unread white default
+color listfocus_unread black white bold reverse
+color info white black bold reverse
+color article white default
+
+highlight article "\\[image [0-9][0-9]*\\]" white black bold

@@ -1,0 +1,34 @@
+# add to bashrc
+###################################################################################################
+# awesome newsbeuters
+function nb-term-search {
+        # some user stuff
+        loca="$HOME/.newsbeuter"
+        pre="nb"
+
+        # other vars
+        num=$RANDOM
+        term="$1"
+        theme="$2"
+        #create conf
+        cat "$loca/config" "$loca/themes/$theme" >> "$loca/temp/$pre-conf.$num"
+        conf="$loca/temp/$pre-conf.$num"
+        # create urls
+        cat "$loca/urls" | grep "$term" >> "$loca/temp/$pre-urls.$num"
+        urls="$loca/temp/$pre-urls.$num"
+        # symlink the cache
+        ln -s "$loca/cache.db" "$loca/temp/$pre-cache.$num"
+        cache="$loca/temp/$pre-cache.$num"
+        # release the beast
+        newsbeuter -u "$urls" -c "$cache" -C "$conf"
+        # clean up the poo
+        rm "$cache" "$urls" "$conf"
+}
+
+alias newsbeuter-porn='nb-term-search "Porn" "porn.theme"'
+alias newsbeuter-crunchy='nb-term-search "CrunchyRoll" "crunchy.theme"'
+alias newsbeuter-youtube='nb-term-search "YouTube" "youtube.theme"'
+alias newsbeuter-music='nb-term-search "Music" "music.theme"'
+alias newsbeuter-news='nb-term-search "News" "news.theme"'
+####################################################################################################
+

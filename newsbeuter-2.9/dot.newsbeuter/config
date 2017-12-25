@@ -1,0 +1,5 @@
+browser              "urlhandler %u"
+bookmark-cmd         "newsbeuter-bookmarker.sh"
+bookmark-interactive yes
+articlelist-format   "%f|%t"
+feedlist-format      "%9u|%t"
