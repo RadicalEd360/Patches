@@ -1,6 +1,6 @@
 import os
 
-VERSION="1.5.2sm Edward"
+VERSION="1.5.2_Ed"
 
 DEFAULT_RESOLUTION = 'Best'
 
