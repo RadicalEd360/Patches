@@ -8,7 +8,7 @@ append awesomebeuter script to the end of bashrc
 ## to use
 you can set your own custom stuff by adding an alias to awesome beuters and creating a theme file in themes folder
 
-alias (programname)='nb-term-search "(url identifier)" "(themefile)"
+alias (programname)='nb-term-search "(url identifier)" "(themefile)"'
 
 #Example:
 alias newsbeuter-youtube='nb-term-search "YouTube" "youtube.theme"'
