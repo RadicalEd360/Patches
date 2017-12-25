@@ -5,6 +5,8 @@ mv dot.newsbeuter to ~/.newsbeuter
 
 append awesomebeuter script to the end of bashrc
 
+create an empty folder named 'temp' inside of ~/.newsbeuter
+
 ## to use
 you can set your own custom stuff by adding an alias to awesomebeuters part of bashrc and creating a theme file in themes folder, or use/modify an existing one
 
